@@ -1,0 +1,29 @@
+.game {
+
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 7px;
+
+}
+
+.game img {
+    width: 280px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.text {
+    margin: 10px;
+}
+
+.btn-add {
+    width: 100%;
+    border: none;
+    background-color: #5D5FEF;
+    border-radius: 5px;
+}
+
+.btn-text {
+    color: white;
+}
