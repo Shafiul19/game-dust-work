@@ -1,6 +1,7 @@
 .games {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
+
 
 
 }
@@ -9,7 +10,22 @@
     background-color: #F2F4FA;
     padding: 30px 80px;
 
+
 }
+
+.game-container .icon {
+    color: #5D5FEF;
+    font-size: 1.5rem;
+}
+
+.game-activities {
+    margin-left: 20px;
+    color: #5D5FEF;
+    font-size: 1.5rem;
+
+}
+
+
 
 .img-container {
     display: grid;

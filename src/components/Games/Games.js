@@ -1,7 +1,10 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Games.css';
 import Game from '../Game/Game';
 import img from '../../images/pic.jpg';
+
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 
 
 const Games = () => {
@@ -16,10 +19,14 @@ const Games = () => {
     return (
         <div className='games'>
             <div className="game-container">
-                <h2>Game dust Acitivities</h2>
+                <FontAwesomeIcon icon={faDumbbell} className='icon'></FontAwesomeIcon>
+
+                <span className='game-activities'>Game Dust Activities</span>
+
                 <h4>Select Today's Game</h4>
 
                 <div className='img-container'>
+
 
                     {games.map(game => <Game key={game.id} game={game}></Game>)}
 
