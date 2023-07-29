@@ -2,7 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Games.css';
 import Game from '../Game/Game';
-import img from '../../images/pic.jpg';
+import Cart from '../Cart/Cart';
+
 
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 
@@ -36,35 +37,13 @@ const Games = () => {
 
             <div className="cart-container">
 
-                <div className='address'>
-                    <div><img src={img} alt="" /></div>
-
-                    <div className='address-text'>
-                        <p>Shafiul Islam </p>
-                        <small>Dinajpur,Bangladesh</small>
-                    </div>
+                <Cart></Cart>
 
 
 
-                </div>
 
 
-                <div className='myself'>
 
-                    <div>
-                        <p >62 <sub className='kg-unit'>kg</sub></p>
-                        <small>Weight</small>
-                    </div>
-                    <div>
-                        <p>5.5</p>
-                        <small>Height</small>
-                    </div>
-                    <div>
-                        <p>25 <sub className='year-unit'>yrs</sub></p>
-                        <small>Age</small>
-                    </div>
-
-                </div>
             </div>
         </div>
     );
