@@ -2,7 +2,8 @@ import React from 'react';
 import './Cart.css';
 import img from '../../images/pic.jpg';
 
-const Cart = () => {
+const Cart = ({ cart }) => {
+    console.log(cart)
     return (
 
         <div className='cart'>
@@ -29,6 +30,22 @@ const Cart = () => {
                     <span>Age</span>
                 </div>
             </div>
+
+            <div className="exercise-detail">
+                <h4>Exercise detail</h4>
+                <div className='flex'>
+                    <p>Exercise time</p>
+                    <p> {cart.length} min</p>
+                </div>
+                <div className="flex">
+                    <p>Break Time</p>
+                    <p>{cart.length} min </p>
+                </div>
+            </div>
+
+            <button className='btn-toast'>
+                <p>Activity Completed</p>
+            </button>
 
         </div>
     );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Games.css';
 import Game from '../Game/Game';
@@ -17,6 +17,15 @@ const Games = () => {
         { id: 5, img: 'https://shorturl.at/ijA39', name: 'Daba', time: '100min' },
         { id: 6, img: 'https://shorturl.at/hioUZ', name: 'Hockey', time: '200min' }
     ]
+
+    const [cart, setCart] = useState([]);
+
+    const handleAddToCart = (game) => {
+        const newCart = [...cart, game];
+        setCart(newCart)
+        console.log(cart)
+    }
+
     return (
         <div className='games'>
             <div className="game-container">
@@ -29,7 +38,8 @@ const Games = () => {
                 <div className='img-container'>
 
 
-                    {games.map(game => <Game key={game.id} game={game}></Game>)}
+                    {games.map(game => <Game key={game.id} game={game}
+                        handleAddToCart={handleAddToCart}></Game>)}
 
                 </div>
 
@@ -37,7 +47,7 @@ const Games = () => {
 
             <div className="cart-container">
 
-                <Cart></Cart>
+                <Cart cart={cart}></Cart>
 
 
 
