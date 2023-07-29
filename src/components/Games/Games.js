@@ -23,7 +23,7 @@ const Games = () => {
     const handleAddToCart = (game) => {
         const newCart = [...cart, game];
         setCart(newCart)
-        console.log(cart)
+
     }
 
     return (

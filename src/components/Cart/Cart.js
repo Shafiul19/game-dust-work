@@ -3,7 +3,7 @@ import './Cart.css';
 import img from '../../images/pic.jpg';
 
 const Cart = ({ cart }) => {
-    console.log(cart)
+    // console.log(cart)
     return (
 
         <div className='cart'>
