@@ -3,10 +3,11 @@ import './Game.css';
 
 const Game = (props) => {
     const { img, name, time } = props.game;
-    console.log(props)
+   
     return (
         <div className='game'>
-            <img src={img} alt="" />
+            {/* <img src={img} alt="" /> */}
+            <img src = {img} alt= "img not found"/>
             <div className='text'>
                 <h4>{name}</h4>
                 <p><small>Time required: {time} </small></p>
